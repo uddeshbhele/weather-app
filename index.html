@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(25, 85, 141);
+        padding: 20px 30px;
+      }
+      #navbar {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+      }
+      #logo {
+        margin-top: -5px;
+        color: white;
+      }
+      input {
+        border: none;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: -10px;
+        background-color: rgba(255, 255, 255, 0.258);
+        color: white;
+      }
+      input:focus {
+        border: none;
+        outline: none;
+      }
+      input::placeholder {
+        color: rgba(255, 255, 255, 0.56);
+      }
+      #main {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      #left {
+        color: white;
+        margin: 10px;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.636);
+        margin-top: 5px;
+      }
+      #right {
+        height: 270px;
+        width: 150px;
+        border: 1px solid grey;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.126);
+        color: white;
+        padding: 10px;
+      }
+      .right-div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
+      }
+      .sybmols {
+        font-size: 2rem;
+      }
+    </style>
+</head>
+<body>
+<div id="navbar">
+        <img src="WhatsApp Image 2026-06-26 at 1.11.16 PM.jpeg" alt="" width="50px" height="50px" />
+        <h1 id="logo">Weatherly</h1>
+      </div>
+      <div id="main">
+        <div id="left">
+          <input
+            type="search"
+            name=""
+            id="search"
+            placeholder="Search for city..."
+          />
+          <br />
+          <img src="" alt="" id="image" />
+          <h1 style="margin-top: 30px">
+            <span id="city">City</span>, <span id="state">State</span>
+          </h1>
+          <p id="day">Day</p>
+          <p id="time">Time</p>
+          <h1 style="font-size: 5rem">
+            <span id="temp">24</span>
+            <span
+              style="
+                font-size: 1.5rem;
+                position: absolute;
+                margin: 10px 0px 0px 10px;
+              "
+              >&deg; C</span
+            >
+          </h1>
+          <h1 id="condition">Partly Cloudy</h1>
+        </div>
+        <div id="right">
+          <div class="right-div">
+            <div style="text-align: center; width: 50px">
+              <h1 class="sybmols">&#127777;</h1>
+            </div>
+            <div>
+              <p style="font-size: 0.8rem">Feels like</p>
+              <h4><span id="feels-like">25</span> &deg;C</h4>
+            </div>
+          </div>
+          <div class="right-div">
+            <div style="text-align: center; width: 50px">
+              <h1 class="sybmols">&#128167;</h1>
+            </div>
+            <div>
+              <p style="font-size: 0.8rem">Humidity</p>
+              <h4><span id="humidity">60</span>%</h4>
+            </div>
+          </div>
+          <div class="right-div">
+            <div style="text-align: center; width: 50px">
+              <h1 class="sybmols">&#128168;</h1>
+            </div>
+            <div>
+              <p style="font-size: 0.8rem">Wind</p>
+              <h4><span id="wind">12</span> km/h</h4>
+            </div>
+          </div>
+          <div class="right-div">
+            <div style="text-align: center; width: 50px">
+              <h1 class="sybmols">&#128065;</h1>
+            </div>
+            <div>
+              <p style="font-size: 0.8rem">Visibility</p>
+              <h4><span id="vis">10</span> km</h4>
+            </div>
+          </div>
+          <div class="right-div" style="border: none">
+            <div style="text-align: center; width: 50px">
+
+              <script src="wth.js"></script>
+</body>
+</html>
